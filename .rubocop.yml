@@ -1,0 +1,155 @@
+require:
+  - rubocop-performance
+
+inherit_mode:
+  merge:
+    - Exclude
+
+AllCops:
+  Exclude:
+    - "vendor/**/*"
+    - "log/**/*"
+    - "bin/**/*"
+    - ".git/**/*"
+    - "tmp/**/*"
+  DisplayCopNames: true
+  TargetRubyVersion: 2.5
+  NewCops: enable
+
+# Use &&/|| instead of and/or.
+Style/AndOr:
+  Enabled: false
+
+# Use only ascii symbols in identifiers.
+Style/AsciiComments:
+  Enabled: false
+
+# Document classes and non-namespace modules.
+Style/Documentation:
+  Enabled: false
+
+# Favor modifier if/unless usage when you have a single-line body.
+Style/IfUnlessModifier:
+  Enabled: false
+
+# Use the lambda method for multi-line lambdas.
+Style/Lambda:
+  Enabled: false
+
+# Limit lines to 79 characters.
+Layout/LineLength:
+  Max: 79
+  Enabled: false
+
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented_relative_to_receiver
+
+Metrics/ClassLength:
+  Enabled: false
+
+Metrics/ModuleLength:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
+
+# Don't use self where it's not needed.
+Style/RedundantSelf:
+  Enabled: false
+
+# Checks for proper usage of fail and raise.
+Style/SignalException:
+  Enabled: false
+
+# Prefer ' strings when you don't need string interpolation or special symbols.
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+  SupportedStyles:
+    - single_quotes
+    - double_quotes
+
+# Align block ends correctly.
+Layout/BlockAlignment:
+  Enabled: false
+
+Metrics/BlockLength:
+  Enabled: false
+
+# Avoid the use of attr. Use attr_reader and attr_accessor instead.
+Style/Attr:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Lint/UnusedBlockArgument:
+  Enabled: false
+
+Lint/UnusedMethodArgument:
+  Enabled: false
+
+Layout/MultilineOperationIndentation:
+  Enabled: false
+
+Metrics/CyclomaticComplexity:
+  Max: 30
+
+Style/SymbolProc:
+  Severity: warning
+  AutoCorrect: false
+
+Performance/Casecmp:
+  AutoCorrect: false
+
+Layout/EndAlignment:
+  AutoCorrect: true
+
+Naming/PredicateName:
+  Enabled: false
+
+Naming/AccessorMethodName:
+  Enabled: false
+
+Metrics/ParameterLists:
+  Max: 10
+
+Metrics/PerceivedComplexity:
+  Enabled: false
+
+Metrics/AbcSize:
+  Enabled: false
+
+Lint/AmbiguousBlockAssociation:
+  Enabled: false
+
+Style/RescueStandardError:
+  Enabled: false
+
+Security/YAMLLoad:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/EmptyCaseCondition:
+  Enabled: false
+
+Style/EmptyMethod:
+  Enabled: false
+
+Style/MultipleComparison:
+  Enabled: false
+
+Naming/MemoizedInstanceVariableName:
+  EnforcedStyleForLeadingUnderscores: optional
+
+Layout/HashAlignment:
+  AllowMultipleStyles: true
+  EnforcedHashRocketStyle:
+    - key
+    - table
+    - separator
+  EnforcedColonStyle:
+    - key
+    - table
+    - separator

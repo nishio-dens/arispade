@@ -1,6 +1,6 @@
 require "arispade/version"
+require "arispade/queryable"
+require "arispade/ast"
 
 module Arispade
-  class Error < StandardError; end
-  # Your code goes here...
 end
