@@ -1,5 +1,5 @@
 module Arispade
-  module Ast
+  module AST
     class ConstantExpression < Expression
       attr_accessor :value
 

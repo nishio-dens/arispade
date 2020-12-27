@@ -1,13 +1,14 @@
 module Arispade
-  module Ast
+  module AST
     class ExpressionType
-      CALL = "Call"
-      CONSTANT = "Constant"
-      QUOTE = "Quote"
-      LAMBDA = "Lambda"
-      EQUAL = "Equal"
-      LESS_THAN = "LessThan"
-      GREATER_THAN = "GreaterThan"
+      CALL         = "Call".freeze
+      CONSTANT     = "Constant".freeze
+      EQUAL        = "Equal".freeze
+      FIELD        = "Field".freeze
+      GREATER_THAN = "GreaterThan".freeze
+      LAMBDA       = "Lambda".freeze
+      LESS_THAN    = "LessThan".freeze
+      QUOTE        = "Quote".freeze
     end
   end
 end

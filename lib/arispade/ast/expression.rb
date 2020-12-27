@@ -1,7 +1,10 @@
 module Arispade
-  module Ast
+  module AST
     class Expression
       attr_accessor :arguments, :node_type
+
+      def initialize
+      end
 
       def node_type
         raise NotImplementedError
